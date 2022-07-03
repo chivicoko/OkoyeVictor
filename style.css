@@ -96,7 +96,7 @@ header {
 header h1 {
     font-family: 'Sacramento', cursive;
     text-align: center;
-    padding-top: 130px;
+    padding-top: 160px;
     color: rgb(230, 24, 24);
     animation-name: victor;
     animation-duration: 21s;
@@ -124,7 +124,7 @@ header p span {
 
 header h2 {
     text-align: center;
-    margin-bottom: 130px;
+    margin-bottom: 150px;
     font-family: 'Trebuchet MS', sans-serif;
     font-weight: lighter;
 }
@@ -174,7 +174,7 @@ header h2 {
     padding-bottom: 40px;
     padding-left: 30px;
     padding-right: 30px;
-    height: 900px;
+    height: 450px;
     border-bottom: 1px rgb(31, 5, 56) solid;
     border-left: 2px rgb(90, 75, 75) solid;
     border-bottom-left-radius: 2rem;
@@ -221,7 +221,7 @@ header h2 {
     padding-bottom: 40px;
     padding-left: 30px;
     padding-right: 30px;
-    height: 900px;
+    height: 600px;
     border-bottom: 1px rgb(31, 5, 56) solid;
     border-left: 2px rgb(90, 75, 75) solid;
     border-bottom-left-radius: 2rem;
@@ -240,7 +240,7 @@ header h2 {
     padding-bottom: 40px;
     padding-left: 30px;
     padding-right: 30px;
-    height: 600px;
+    height: 450px;
     border-bottom: 1px rgb(31, 5, 56) solid;
     border-right: 2px rgb(90, 75, 75) solid;
     border-bottom-right-radius: 2rem;
