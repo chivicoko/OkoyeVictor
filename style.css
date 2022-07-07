@@ -13,16 +13,6 @@
 }
 
 /* animation2 */
-@keyframes wave {
-    0%   {background: rgb(31, 5, 56); left:0px; top:0px;}
-    15%  {background: rgb(30, 13, 46); left:200px; top:0px;}
-    35%  {background: rgb(50, 20, 78); left:0px; top:200px;}
-    55%  {background: rgb(81, 45, 114); left:200px; top:200px;}
-    75%  {background: rgb(50, 20, 78); left:200px; top:0px;}
-    95%  {background: rgb(30, 13, 46); left:200px; top:200px;}
-    100% {background: rgb(31, 5, 56); left:0px; top:0px;}
-}
-
 @keyframes about-span {
     0% {color: yellow;}
     10% {color: red; visibility: hidden; transition: visibility 2s;}
@@ -37,6 +27,44 @@
     100% {color: yellow;}
 }
 
+/* animation3 */
+@keyframes wave {
+    0%   {background: rgb(31, 5, 56); left:0px; top:0px;}
+    15%  {background: rgb(30, 13, 46); left:200px; top:0px;}
+    35%  {background: rgb(50, 20, 78); left:0px; top:200px;}
+    55%  {background: rgb(81, 45, 114); left:200px; top:200px;}
+    75%  {background: rgb(50, 20, 78); left:200px; top:0px;}
+    95%  {background: rgb(30, 13, 46); left:200px; top:200px;}
+    100% {background: rgb(31, 5, 56); left:0px; top:0px;}
+}
+
+/* animation4 */
+@keyframes glow {
+    0%, 100% {color: rgba(181, 206, 71, 0.699); text-shadow: 0 0 12px lime, 0 0 50px lime, 0 0 100px lime;}
+    10%, 90% {color: rgba(51, 51, 51, 0.925); text-shadow: none;}
+
+}
+
+/* animation5 */
+@keyframes underglow1 {
+    0% {margin-top: 0; margin-left: 0;}
+    25% {margin-top: -30; margin-left: 0;}
+    50% {margin-top: -30; margin-left: -30;}
+    75% {margin-top: 0; margin-left: -30;}
+    100% {margin-top: 0; margin-left: 0;}
+}
+
+/* animation6 */
+@keyframes underglow2 {
+    0% {margin-top: 0; margin-left: 0;}
+    25% {margin-top: 30; margin-left: 0;}
+    50% {margin-top: 30; margin-left: 30;}
+    75% {margin-top: 0; margin-left: 30;}
+    100% {margin-top: 0; margin-left: 0;}
+}
+
+
+
 body {
     /* overflow: auto; */
     color: white;
@@ -44,16 +72,12 @@ body {
     padding: 0;
     font-family: 'Merriweather', serif;
     background: rgb(31, 5, 56);
-    animation-name: wave;
-    animation-duration: 5s;
-    animation-delay: 1s;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
-    animation-timing-function: ease-in-out;
+    animation: wave 5s ease-in-out 1s infinite normal;
+    scroll-behavior: smooth;
 }
 
 h1 {
-    font-family: 'Sacramento', cursive;
+    font-family: cursive;
     font-size: xx-large;
 }
 
@@ -93,22 +117,64 @@ header {
     background: -moz-linear-gradient(to top, rgba(255,0,0,0), rgba(0,0,255,.7));
 }
 
-header h1 {
+.glow {
     font-family: 'Sacramento', cursive;
+    font-size: 5rem;
     text-align: center;
-    padding-top: 160px;
+    padding-top: 0;
+    padding-bottom: 0;
+    /* margin-top: 0; */
+    margin-bottom: 0;
     color: rgb(230, 24, 24);
-    animation-name: victor;
-    animation-duration: 21s;
-    animation-delay: 1s;
-    animation-iteration-count: infinite;
-    animation-direction: reverse;
-    animation-timing-function: ease-in-out;
+    animation: victor 21s ease-in-out 1s infinite reverse;
 }
+
+.glow > span {
+    color: rgb(34, 31, 31);
+    animation: glow 15s step-end infinite;
+}
+
+.glow > span:nth-child(2){
+    animation-delay: 0.50s;
+}
+
+.glow > span:nth-child(3){
+    animation-delay: 0.75s;
+}
+
+.glow > span:nth-child(4){
+    animation-delay: 5s;
+}
+
+.glow > span:nth-child(5){
+    animation-delay: 5.25s;
+}
+
+.glow > span:nth-child(6){
+    animation-delay: 5.50s;
+}
+
+.glow > span:nth-child(7){
+    animation-delay: 5.75s;
+}
+
+.glow > span:nth-child(8){
+    animation-delay: 6s;
+}
+
+.glow > span:nth-child(9){
+    animation-delay: 6.25s;
+}
+
+.glow > span:nth-child(10){
+    animation-delay: 6.50s;
+}
+
 
 header p {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    margin-top: 0;
     line-height: 25px;
 }
 
@@ -124,7 +190,7 @@ header p span {
 
 header h2 {
     text-align: center;
-    margin-bottom: 150px;
+    margin-bottom: 50px;
     font-family: 'Trebuchet MS', sans-serif;
     font-weight: lighter;
 }
@@ -163,9 +229,59 @@ header h2 {
     color: grey;
 }
 
+#underglowA {
+    padding-top: 30px;
+    padding-left: 40px;
+}
+
+#underglowB {
+    padding-top: 70;
+}
+
+#underglowC {
+    padding-top: 10px;
+    padding-left: 1150px;
+}
+
+#underglowD {
+    padding-top: 90px;
+    padding-left: 1190px;
+}
+
+#underglow1, #underglow2, #underglow3, #underglow4 {
+    padding-top: 0;
+    padding-left: 1050px;
+}
+
 .container {
     margin: 5rem 15rem;
     color: white;
+}
+
+.under-glow-1 {
+    width: 20vh;
+    height: 20vh;
+    position: absolute;
+    border: none;
+    border-radius: 100px;
+    background-image: linear-gradient(to top left, #9500ff70, #00fff769);
+    margin-top: 0;
+    margin-left: 0;
+    opacity: 0.4;
+    animation: underglow1 10s ease 0s infinite;
+}
+
+.under-glow-1 {
+    width: 20vh;
+    height: 20vh;
+    position: absolute;
+    border: none;
+    border-radius: 100px;
+    background-image: linear-gradient(to top left, #ff007754, #00fff757);
+    margin-top: 0;
+    margin-left: 0;
+    opacity: 0.4;
+    animation: underglow2 10s ease 0s infinite;
 }
 
 #hero {
@@ -207,12 +323,7 @@ header h2 {
 }
 
 #about p span {
-    animation-name: about-span;
-    animation-duration: 4s;
-    animation-delay: 1s;
-    animation-iteration-count: infinite;
-    animation-direction: reverse;
-    animation-timing-function: ease-in-out;
+    animation: about-span 4s ease-in-out 1s infinite reverse;
 }
 
 #tech-stack {
@@ -255,16 +366,11 @@ header h2 {
 
 #span1 {
     font-size: small;
-    animation-name: about-span;
-    animation-duration: 4s;
-    animation-delay: 1s;
-    animation-iteration-count: infinite;
-    animation-direction: reverse;
-    animation-timing-function: ease-in-out;
+    animation: about-span 4s ease-in-out 1s infinite reverse;
 }
 
 #projects span {
-    font-size: xx-small;
+    font-size: small;
 }
 
 #winks {
@@ -315,8 +421,10 @@ header h2 {
 
 .cad a {
     margin: 20px 30px;
+    margin-left: 40px;
     /* color: rgb(0, 255, 0); */
-    color: rgba(128, 128, 128, 0.74);
+    color: rgba(255, 255, 255, 0.781);
+    /* color: rgba(128, 128, 128, 0.788); */
     font-weight: 500;
     text-decoration: underline;
 }
@@ -448,9 +556,9 @@ footer {
     margin: 0;
  }
 
-footer p {
-    line-height: normal;
- }
+ footer p {
+     line-height: normal;
+  }
 
 .me, .victech {
     text-decoration: underline;
@@ -467,8 +575,8 @@ footer p {
 
 /* media query section for smaller sizes */
 
-/* for screens that have 500px and less */
-@media only screen and (max-width: 500px) {
+/* for screens that have 450px and less */
+@media only screen and (max-width: 450px) {
 
     body {
         font-size: small;
@@ -487,6 +595,26 @@ footer p {
         margin: 0.5rem 1.5rem;
         color: white;
     }
+
+    .glow {
+        margin-top: 50px;
+        font-size: 2.5rem;
+    }
+
+    #underglowC {
+        padding-top: 20px;
+        padding-left: 290px;
+    }
+
+    #underglowD {
+        padding-top: 80px;
+        padding-left: 330px;
+    }
+
+    #underglow1, #underglow2, #underglow3, #underglow4 {
+        padding-left: 330px;
+    }
+
 
     #hero {
         line-height: normal;
@@ -650,6 +778,377 @@ footer p {
 
     .copyright-hr {
         margin-top: 15px;
+    }
+
+}
+
+
+/* for screens that have 768px and less */
+@media only screen and (max-width: 768px) {
+
+    body {
+        font-size: medium;
+    }
+
+    #nav li {
+        margin: 3px 7px;
+    }
+
+    #d-div {
+        margin-left: 370px;
+    }
+
+
+    .glow {
+        margin-top: 50px;
+        font-size: 3.5rem;
+    }
+
+    #underglowC {
+        padding-top: 20px;
+        padding-left: 600px;
+    }
+
+    #underglowD {
+        padding-top: 80px;
+        padding-left: 650px;
+    }
+
+    .container {
+        margin: 0.5rem 4.5rem;
+        color: white;
+    }
+
+    #underglow1, #underglow2, #underglow3, #underglow4 {
+        padding-left: 610px;
+    }
+
+
+    #hero {
+        height: 600px;
+    }
+
+    #hero img {
+        width: 55%;
+        height: 170px;
+        margin-top: auto;
+        display: none;
+    }
+
+    #hero p {
+        font-size: small;
+    }
+
+    #hero h3 {
+        font-size: medium;
+    }
+
+    #about {
+        line-height: normal;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 600px;
+    }
+
+    #about img {
+        width: 55%;
+        height: 170px;
+        margin-top: auto;
+        display: none;
+    }
+
+    #about p {
+        font-size: small;
+    }
+
+    #about h3 {
+        font-size: medium;
+    }
+
+    #tech-stack {
+        line-height: 1;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        height: 600px;
+    }
+
+    #tech-stack img {
+        width: 55%;
+        height: 170px;
+        margin-top: auto;
+        display: none;
+    }
+
+    #tech-stack p {
+        font-size: small;
+    }
+
+    #tech-stack h3 {
+        font-size: medium;
+    }
+
+    #projects {
+        line-height: 1;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 550px;
+        display: block;
+    }
+
+    #project-tops {
+        /* display: ; */
+    }
+
+    #projects img {
+        width: 55%;
+        height: 270px;
+        margin: 10px 10px;
+    }
+
+    #projects p {
+        font-size: small;
+        margin: 30px 10px;
+    }
+
+    #projects h3 {
+        font-size: medium;
+        margin: 10px 10px;
+    }
+
+    #victor {
+        font-size: small;
+    }
+
+
+    #victor span {
+        font-size: x-small;
+    }
+
+    .cad-container {
+        width: 50vw;
+        height: 95vh;
+        margin: 9vh 25vw;
+    }
+
+    .cad {
+        border-radius: 3px;
+        padding-bottom: 5px;
+        height: 88vh;
+        width: 55vw;
+    }
+
+    .cad img {
+        height: 68vh;
+        width: 45vw;
+        margin: 5px 6px;
+    }
+
+    .cad p {
+        text-align: center;
+        font-size: small;
+    }
+
+    .cad a {
+        margin-left: 135px;
+        text-decoration: underline;
+        font-size: small;
+    }
+
+    .white, .red, .orange, .green, .yellow, .blue, .purple, .green2, .orange2, .red2, .white2 {
+        display: none;
+    }
+
+    #u-div2 {
+        margin-left: 370px;
+    }
+
+}
+
+
+/* for screens that have 991px and less */
+@media only screen and (max-width: 991px) {
+
+    body {
+        font-size: large;
+    }
+
+    #nav li {
+        margin: 5px 10px;
+    }
+
+    .glow {
+        margin-top: 50px;
+        font-size: 4.5rem;
+    }
+
+    #underglowC {
+        padding-top: 20px;
+        padding-left: 820px;
+    }
+
+    #underglowD {
+        padding-top: 80px;
+        padding-left: 870px;
+    }
+
+    #d-div {
+        margin-left: 490px;
+    }
+
+    .container {
+        margin: 0.5rem 7.5rem;
+        color: white;
+    }
+
+    #underglow1, #underglow2, #underglow3, #underglow4 {
+        padding-left: 750px;
+    }
+
+
+    #hero {
+        height: 600px;
+    }
+
+    #hero img {
+        width: 55%;
+        height: 170px;
+        margin-top: auto;
+        display: none;
+    }
+
+    #hero p {
+        font-size: small;
+    }
+
+    #hero h3 {
+        font-size: medium;
+    }
+
+    #about {
+        line-height: normal;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 600px;
+    }
+
+    #about img {
+        width: 55%;
+        height: 170px;
+        margin-top: auto;
+        display: none;
+    }
+
+    #about p {
+        font-size: small;
+    }
+
+    #about h3 {
+        font-size: medium;
+    }
+
+    #tech-stack {
+        line-height: 1;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        height: 600px;
+    }
+
+    #tech-stack img {
+        width: 55%;
+        height: 170px;
+        margin-top: auto;
+        display: none;
+    }
+
+    #tech-stack p {
+        font-size: small;
+    }
+
+    #tech-stack h3 {
+        font-size: medium;
+    }
+
+    #projects {
+        line-height: 1;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 600px;
+        display: block;
+    }
+
+    #project-tops {
+        /* display: ; */
+    }
+
+    #projects img {
+        width: 55%;
+        height: 350px;
+        margin: 10px 10px;
+    }
+
+    #projects p {
+        font-size: small;
+        margin: 30px 10px;
+    }
+
+    #projects h3 {
+        font-size: medium;
+        margin: 10px 10px;
+    }
+
+    #victor {
+        font-size: small;
+    }
+
+
+    #victor span {
+        font-size: x-small;
+    }
+
+    .cad-container {
+        width: 30vw;
+        height: 95vh;
+        margin: 9vh 33vw;
+    }
+
+    .cad {
+        border-radius: 3px;
+        padding-bottom: 5px;
+        height: 95vh;
+        width: 40vw;
+    }
+
+    .cad img {
+        height: 75vh;
+        width: 35vw;
+        margin: 5px 6px;
+    }
+
+    .cad p {
+        text-align: center;
+        font-size: small;
+    }
+
+    .cad a {
+        margin-left: 135px;
+        text-decoration: underline;
+        font-size: small;
+    }
+
+    .white, .red, .orange, .green, .yellow, .blue, .purple, .green2, .orange2, .red2, .white2 {
+        display: none;
+    }
+
+    #u-div2 {
+        margin-left:490px;
     }
 
 }
