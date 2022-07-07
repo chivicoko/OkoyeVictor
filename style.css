@@ -582,7 +582,8 @@ footer {
     }
 
     #nav li {
-        margin: 2px 5px;
+        margin: 2px 2px !important;
+        font-size: 11px !important;
     }
 
     header {
@@ -615,7 +616,7 @@ footer {
         border: 1px rgb(44, 39, 39) solid;
         width: 20px;
         height: 20px;
-        margin-left: 210px !important;
+        margin-left: 170px !important;
     }
 
     .under-glow-1 {
@@ -633,23 +634,23 @@ footer {
     }
 
     #underglowC {
-        padding-left: 380px !important;
+        padding-left: 300px !important;
     }
 
     #underglowD {
         padding-top: 20px !important;
-        padding-left: 395px !important;
+        padding-left: 322px !important;
     }
 
     #underglow1, #underglow2, #underglow3, #underglow4 {
-        padding-left: 350px !important;
+        padding-left: 305px !important;
     }
 
     .container {
         overflow: auto;
         margin: 0.5rem 1.5rem !important;
         color: white;
-        width: 390px !important;
+        width: 320px !important;
     }
 
     #hero {
@@ -658,7 +659,7 @@ footer {
         padding-bottom: 10px;
         padding-left: 10px;
         padding-right: 10px;
-        height: 300px !important;
+        height: 350px !important;
     }
 
     #hero img {
@@ -682,7 +683,7 @@ footer {
         padding-bottom: 10px;
         padding-left: 10px;
         padding-right: 10px;
-        height: 900px;
+        height: 750px !important;
     }
 
     #about img {
@@ -704,7 +705,7 @@ footer {
         line-height: 1;
         padding-top: 10px;
         padding-bottom: 10px;
-        height: 900px;
+        height: 650px !important;
     }
 
     #tech-stack img {
@@ -728,7 +729,7 @@ footer {
         padding-bottom: 10px;
         padding-left: 10px;
         padding-right: 10px;
-        height: 450px !important;
+        height: 500px !important;
         display: block;
     }
 
@@ -758,21 +759,24 @@ footer {
     }
 
     .cad-container {
-        width: 50vw !important;
+        width: 30vw !important;
         height: 75vh !important;
+        /* margin-right: 10px !important; */
+        margin-left: 66px !important;
     }
 
     .cad {
         border-radius: 3px;
         padding-bottom: 5px;
         height: 70vh !important;
-        width: 40vw !important;
-        margin-left: 1px !important;
+        width: 65vw !important;
+        margin-left: 0 !important;
+        margin-right: 40px !important;
     }
 
     .cad img {
         height: 48vh !important;
-        width: 37vw !important;
+        width: 62vw !important;
         margin: 5px 6px;
     }
 
@@ -781,7 +785,7 @@ footer {
     }
 
     .cad a {
-        margin-left: 40px !important;
+        margin-left: 70px !important;
         text-decoration: underline;
         font-size: small;
     }
@@ -791,7 +795,7 @@ footer {
     }
 
     #u-div2 {
-        margin-left: 210px !important;
+        margin-left: 170px !important;
         width: 20px;
         height: 20px;
     }
