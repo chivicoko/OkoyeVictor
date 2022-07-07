@@ -64,7 +64,6 @@
 }
 
 
-
 body {
     /* overflow: auto; */
     color: white;
@@ -126,7 +125,7 @@ header {
     /* margin-top: 0; */
     margin-bottom: 0;
     color: rgb(230, 24, 24);
-    animation: victor 21s ease-in-out 1s infinite reverse;
+    /* animation: victor 21s ease-in-out 1s infinite reverse; */
 }
 
 .glow > span {
@@ -213,7 +212,7 @@ header h2 {
     margin-left: 665px;
     text-align: center;
     justify-items: center;
-    box-shadow: 1px 1px 112px yellow, 0 0 35px grey, 0 0 21px red;;
+    box-shadow: 1px 1px 112px yellow, 0 0 35px grey, 0 0 21px red;
 }
 
 #d-div:hover {
@@ -421,7 +420,7 @@ header h2 {
 
 .cad a {
     margin: 20px 30px;
-    margin-left: 40px;
+    margin-left: 30px;
     /* color: rgb(0, 255, 0); */
     color: rgba(255, 255, 255, 0.781);
     /* color: rgba(128, 128, 128, 0.788); */
@@ -576,7 +575,7 @@ footer {
 /* media query section for smaller sizes */
 
 /* for screens that have 450px and less */
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 500px) {
 
     body {
         font-size: small;
@@ -586,35 +585,72 @@ footer {
         margin: 2px 5px;
     }
 
-    #d-div {
-        margin-left: 225px;
-    }
-
-
-    .container {
-        margin: 0.5rem 1.5rem;
-        color: white;
+    header {
+        overflow: auto;
+        height: 85vh;
+        font-size: small !important;
     }
 
     .glow {
-        margin-top: 50px;
-        font-size: 2.5rem;
+        font-family: 'Sacramento', cursive;
+        font-size: 2.5rem !important;
+        text-align: center;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-bottom: 0 !important;
+        overflow: auto;
+
+    }
+
+    header p {
+        margin-bottom: 0;
+        margin-top: 0 !important;
+    }
+
+    header h2 {
+        margin-bottom: 50px;
+    }
+
+    #d-div {
+        border: 1px rgb(44, 39, 39) solid;
+        width: 20px;
+        height: 20px;
+        margin-left: 210px !important;
+    }
+
+    .under-glow-1 {
+        width: 6vh;
+        height: 6vh;
+    }
+
+    .under-glow-1 {
+        width: 6vh;
+        height: 6vh;
+    }
+
+    #underglowA {
+        padding-left: 20px;
     }
 
     #underglowC {
-        padding-top: 20px;
-        padding-left: 290px;
+        padding-left: 380px !important;
     }
 
     #underglowD {
-        padding-top: 80px;
-        padding-left: 330px;
+        padding-top: 20px !important;
+        padding-left: 395px !important;
     }
 
     #underglow1, #underglow2, #underglow3, #underglow4 {
-        padding-left: 330px;
+        padding-left: 350px !important;
     }
 
+    .container {
+        overflow: auto;
+        margin: 0.5rem 1.5rem !important;
+        color: white;
+        width: 390px !important;
+    }
 
     #hero {
         line-height: normal;
@@ -622,7 +658,7 @@ footer {
         padding-bottom: 10px;
         padding-left: 10px;
         padding-right: 10px;
-        height: 900px;
+        height: 300px !important;
     }
 
     #hero img {
@@ -692,17 +728,13 @@ footer {
         padding-bottom: 10px;
         padding-left: 10px;
         padding-right: 10px;
-        height: 500px;
+        height: 450px !important;
         display: block;
-    }
-
-    #project-tops {
-        /* display: ; */
     }
 
     #projects img {
         width: 55%;
-        height: 190px;
+        height: 170px !important;
         margin: 10px 10px;
     }
 
@@ -726,30 +758,30 @@ footer {
     }
 
     .cad-container {
-        width: 50vw;
-        height: 70vh;
+        width: 50vw !important;
+        height: 75vh !important;
     }
 
     .cad {
         border-radius: 3px;
         padding-bottom: 5px;
-        height: 66vh;
-        width: 50vw;
+        height: 70vh !important;
+        width: 40vw !important;
+        margin-left: 1px !important;
     }
 
     .cad img {
-        height: 48vh;
-        width: 45vw;
+        height: 48vh !important;
+        width: 37vw !important;
         margin: 5px 6px;
     }
 
     .cad p {
-        text-align: center;
         font-size: small;
     }
 
     .cad a {
-        margin-left: 60px;
+        margin-left: 40px !important;
         text-decoration: underline;
         font-size: small;
     }
@@ -759,7 +791,9 @@ footer {
     }
 
     #u-div2 {
-        margin-left: 225px;
+        margin-left: 210px !important;
+        width: 20px;
+        height: 20px;
     }
 
     footer {
@@ -783,6 +817,7 @@ footer {
 }
 
 
+/* ;;;;;;;;;;;;;;;;;;;;;;;;;;; Still needs adjustments ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; */
 /* for screens that have 768px and less */
 @media only screen and (max-width: 768px) {
 
