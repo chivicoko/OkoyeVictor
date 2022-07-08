@@ -308,7 +308,7 @@ header h2 {
     padding-bottom: 40px;
     padding-left: 30px;
     padding-right: 30px;
-    height: 900px;
+    height: 700px;
     border-bottom: 1px rgb(31, 5, 56) solid;
     border-right: 2px rgb(90, 75, 75) solid;
     border-bottom-right-radius: 2rem;
@@ -659,7 +659,7 @@ footer {
         padding-bottom: 10px;
         padding-left: 10px;
         padding-right: 10px;
-        height: 350px !important;
+        height: 400px !important;
     }
 
     #hero img {
@@ -683,7 +683,7 @@ footer {
         padding-bottom: 10px;
         padding-left: 10px;
         padding-right: 10px;
-        height: 750px !important;
+        height: 850px !important;
     }
 
     #about img {
@@ -705,7 +705,7 @@ footer {
         line-height: 1;
         padding-top: 10px;
         padding-bottom: 10px;
-        height: 650px !important;
+        height: 700px !important;
     }
 
     #tech-stack img {
@@ -729,7 +729,7 @@ footer {
         padding-bottom: 10px;
         padding-left: 10px;
         padding-right: 10px;
-        height: 500px !important;
+        height: 550px !important;
         display: block;
     }
 
