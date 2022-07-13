@@ -238,12 +238,12 @@ header h2 {
 }
 
 #underglowC {
-    padding-top: 2px;
+    padding-top: 0;
     padding-left: 1150px;
 }
 
 #underglowD {
-    padding-top: 35px;
+    padding-top: 15px;
     padding-left: 1190px;
 }
 
@@ -614,7 +614,7 @@ footer {
     }
 
     header h2 {
-        margin-bottom: 50px;
+        margin-bottom: 35px;
     }
 
     #d-div {
