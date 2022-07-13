@@ -238,12 +238,12 @@ header h2 {
 }
 
 #underglowC {
-    padding-top: 10px;
+    padding-top: 2px;
     padding-left: 1150px;
 }
 
 #underglowD {
-    padding-top: 90px;
+    padding-top: 35px;
     padding-left: 1190px;
 }
 
@@ -580,10 +580,15 @@ footer {
     body {
         font-size: small;
     }
+    #nav {
+        display: inline-block;
+        float: none !important;
+        text-align: center !important;
+    }
 
     #nav li {
         margin: 2px 2px !important;
-        font-size: 11px !important;
+        font-size: 13px !important;
     }
 
     header {
@@ -768,7 +773,7 @@ footer {
     .cad {
         border-radius: 3px;
         padding-bottom: 5px;
-        height: 70vh !important;
+        height: 62vh !important;
         width: 65vw !important;
         margin-left: 0 !important;
         margin-right: 40px !important;
@@ -806,6 +811,11 @@ footer {
     }
 
     footer p {
+        line-height: normal;
+        font-size: small;
+    }
+
+    footer span {
         line-height: normal;
         font-size: small;
     }
